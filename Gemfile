@@ -46,12 +46,24 @@ group :development do
 end
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 gem "font-awesome-rails"
+
 gem 'simple_form'
+
 gem 'devise'
+
 gem 'dotenv-rails', groups: [:development]
+
 gem 'omniauth-twitter'
+
 gem 'omniauth-facebook'
+
 gem 'validates_timeliness','~> 3.0'
+
 gem 'momentjs-rails','~> 2.9', github: 'derekprior/momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
+gem 'twitter'
+
+gem 'koala'
