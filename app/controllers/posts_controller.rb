@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
       respond_to do |format|
         if @post.save
-          format.html {redirect_to dashboard_path, notice: "Post was succesfully created."}
+          format.html {redirect_to dashboard_path, notice: "Post was succesfully created"}
         else
           format.html { render :new }
         end
