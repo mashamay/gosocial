@@ -22,6 +22,6 @@ class ConnectionsController < ApplicationController
   end
 
   def auth_hash
-    request.env['onmiauth.auth']
+    request.env['omniauth.auth']
   end
 end
