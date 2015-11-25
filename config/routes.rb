@@ -8,12 +8,16 @@ Rails.application.routes.draw do
 
   get 'auth/:provider/callback', to: 'connections#create'
   resources :connections, only: [:destroy]
-  
+
   get 'auth/failure', to: 'connections#omniauth_failure'
   root 'pages#home'
   get 'dashboard', to: "pages#dashboard"
 
-  resources :posts
+  resources :posts do
+    member do
+      put :cancel
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
