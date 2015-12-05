@@ -1,13 +1,13 @@
 <div class="row">
   <!-- Profile and Connections -->
   <div class="col-md-2 text-center">
-    <%= image_tag "logo.jpg", class: "logo" %>
-    <hr>
+    <%= image_tag "logos.png", class: "logo" %>
+        <!-- <hr>
     <div class="timezone">
       <p class="text-center"><b><%= Time.zone.name %> Timezone</b></p>
       <%= link_to "change", edit_user_registration_path %>
     </div>
-    <hr>
+    <hr> -->
     <div class="social">
       <% unless current_user.connections.where(provider: "twitter").any? %>
       <%= link_to "Connect with Twitter", "/auth/twitter", class: "btn btn-info btn-block btm-sm" %>
@@ -15,7 +15,7 @@
       <%= link_to "Connect with Twitter", "/auth/twitter", class: "btn btn-info btn-block btm-sm", disabled: true %>
       <%= link_to "Delete Connection", connection_path(current_user.connections.where(provider: "twitter").first), method: :delete %>
       <% end %>
-
+      <hr>
       <% unless current_user.connections.where(provider: "facebook").any? %>
       <%= link_to "Connect with Facebook", "/auth/facebook", class: "btn btn-primary btn-block btm-sm" %>
       <% else %>

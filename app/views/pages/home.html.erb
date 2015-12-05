@@ -1,5 +1,40 @@
-  <div class="bg-dark"></div>
-  div.
-  <div class="text-center landing_title">
-    <%= link_to "posting beyond now", new_user_session_path, class: "btn btn-default btn-lg btn-landing" %>
+
+
+  <div class="home-information">
+    <div class="subtitle text-center text-white center">
+      <p>A new way to communicate through social networks</p>
+    </div>
+
+    <div class="lead text-center text-white subtitle-small">
+      <p>Free social media management platform for marketers</p>
+    </div>
+    <div class="text-center landing_title">
+      <%= link_to "Login", new_user_session_path, class: "btn btn-default btn-lg btn-landing opacity" %>
+    </div>
   </div>
+
+
+
+<script type="text/javascript">
+	jQuery(function($){
+		$.supersized({
+
+			// Functionality
+			slide_interval          :  10000,	// Length between transitions
+			transition              :  1, 		// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed	:  700,		// Speed of transition
+
+			// Components
+			slide_links		: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+
+			slides 			:  	[       // Slideshow Images
+
+
+				{image : 'assets/bg2.jpg'},
+				{image : 'assets/bg3.jpg'}
+
+			]
+
+		});
+	});
+</script>
